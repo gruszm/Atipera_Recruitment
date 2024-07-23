@@ -1,4 +1,4 @@
-package pl.gruszm.atipera_recruitment.dataTransferObjects;
+package pl.gruszm.atipera_recruitment.datatransferobjects;
 
 public class GithubBranch
 {

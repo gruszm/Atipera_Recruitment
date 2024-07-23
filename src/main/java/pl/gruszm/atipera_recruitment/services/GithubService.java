@@ -8,9 +8,9 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestClient;
-import pl.gruszm.atipera_recruitment.dataTransferObjects.ErrorMessage;
-import pl.gruszm.atipera_recruitment.dataTransferObjects.GithubBranch;
-import pl.gruszm.atipera_recruitment.dataTransferObjects.GithubRepository;
+import pl.gruszm.atipera_recruitment.datatransferobjects.ErrorMessage;
+import pl.gruszm.atipera_recruitment.datatransferobjects.GithubBranch;
+import pl.gruszm.atipera_recruitment.datatransferobjects.GithubRepository;
 
 import java.util.Arrays;
 

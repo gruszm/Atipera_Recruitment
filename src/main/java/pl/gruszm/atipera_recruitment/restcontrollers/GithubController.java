@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.gruszm.atipera_recruitment.dataTransferObjects.GithubBranch;
-import pl.gruszm.atipera_recruitment.dataTransferObjects.GithubRepository;
+import pl.gruszm.atipera_recruitment.datatransferobjects.GithubBranch;
+import pl.gruszm.atipera_recruitment.datatransferobjects.GithubRepository;
 import pl.gruszm.atipera_recruitment.services.GithubService;
 
 @RestController
