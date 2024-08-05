@@ -1,9 +1,14 @@
 package pl.gruszm.atipera_recruitment.datatransferobjects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GithubRepository
 {
     private String name;
     private Owner owner;
+    @JsonIgnore
     private boolean fork;
     private GithubBranch[] branches;
 
@@ -17,14 +22,14 @@ public class GithubRepository
         return name;
     }
 
-    public Owner getOwner()
-    {
-        return owner;
-    }
-
     public GithubBranch[] getBranches()
     {
         return branches;
+    }
+
+    public Owner getOwner()
+    {
+        return owner;
     }
 
     public void setBranches(GithubBranch[] branches)
@@ -32,13 +37,18 @@ public class GithubRepository
         this.branches = branches;
     }
 
-    public static class Owner
+    public void setName(String name)
     {
-        private String login;
+        this.name = name;
+    }
 
-        public String getLogin()
-        {
-            return login;
-        }
+    public void setOwner(Owner owner)
+    {
+        this.owner = owner;
+    }
+
+    public void setFork(boolean fork)
+    {
+        this.fork = fork;
     }
 }

@@ -1,5 +1,8 @@
 package pl.gruszm.atipera_recruitment.datatransferobjects;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GithubBranch
 {
     private String name;
@@ -15,13 +18,13 @@ public class GithubBranch
         return commit;
     }
 
-    private static class Commit
+    public void setName(String name)
     {
-        private String sha;
+        this.name = name;
+    }
 
-        public String getSha()
-        {
-            return sha;
-        }
+    public void setCommit(Commit commit)
+    {
+        this.commit = commit;
     }
 }
